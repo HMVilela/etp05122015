@@ -337,9 +337,10 @@
                             <label></label>
                             <textarea id="mensagem" class="form-control" rows="9" placeholder="Sua mensagem aqui..."></textarea>
                         </div>
+                        <p id="respostaDoEnvio" style="color: #FED136;"></p>
                         <div class="col-md-4 col-md-offset-4">
                             <label></label>
-                            <input id="enviar" type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg" value="Enviar"></input>
+                            <input id="enviar" type="button" class="btn btn-primary btn-block btn-lg" value="Enviar">
                         </div>
                     </form>
                 </div>
@@ -436,5 +437,14 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#telefone").mask("(99) 99999-9999");
+            inicializaPagina();
+        });
+    </script>
+    
   </body>
 </html>
