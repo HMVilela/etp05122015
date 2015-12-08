@@ -52,14 +52,15 @@
     <header id="first">
         <div class="header-content">
             <div class="inner">
-                <h1 class="cursive"><b>Então Toma Produções</b></h1>
-                <h4>criatividade e inovação</h4>
-                <hr>
+                <img src="assets/etp_video.png" alt="" style="height: 40vh;">
+                <!--<h1 class="cursive"><b>Então Toma Produções</b></h1>
+                <h4>criatividade e inovação</h4>-->
+                <hr style="margin-top: 50px;">
                 <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">vídeo</a> &nbsp; <a href="#one" class="btn btn-primary btn-xl page-scroll">Toma!</a>
             </div>
         </div>
         <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in img-responsive" data-wow-delay="0.5s" poster="" id="video-background">
-            <source src="assets/fdn.mp4" type="video/mp4">Seu navegador não suporta esta tag de vídeo. Tente atualizá-lo.
+            <source src="assets/video.mp4" type="video/mp4" style="height:100%;">Seu navegador não suporta esta tag de vídeo. Tente atualizá-lo.
         </video>
     </header>
     <section class="bg-primary" id="one">
@@ -124,6 +125,7 @@
                         </div>
                     </a>
                 </div>
+                
             </div>
         </div>
     
@@ -315,7 +317,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="margin-top-0 wow fadeIn" style="color: #FED136;"><b>ENTRE EM CONTATO</b></h2>
+                    <h2 class="margin-top-0 wow fadeIn" style="color: #FF9700;"><b>ENTRE EM CONTATO</b></h2>
                     <hr class="primary"><br><br>
                     <p>Preencha o formulário abaixo. Teremos prazer em lhe atender!</p>
                 </div>
@@ -337,7 +339,7 @@
                             <label></label>
                             <textarea id="mensagem" class="form-control" rows="9" placeholder="Sua mensagem aqui..."></textarea>
                         </div>
-                        <p id="respostaDoEnvio" style="color: #FED136;"></p>
+                        <p id="respostaDoEnvio" style="color: #FF9700; margin-top: 30px;"></p>
                         <div class="col-md-4 col-md-offset-4">
                             <label></label>
                             <input id="enviar" type="button" class="btn btn-primary btn-block btn-lg" value="Enviar">
@@ -351,7 +353,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-6 col-sm-3 column">
-                    <h4 style="color: #FED136">Endereço:</h4>
+                    <h4 style="color: #FF9700">Endereço:</h4>
                     <ul class="list-unstyled">
                         <li><a href="https://www.google.com.br/maps/place/Av.+Sinh%C3%A1+Moreira,+250,+Santa+Rita+do+Sapuca%C3%AD+-+MG,+37540-000/@-22.2554405,-45.7062218,17z/data=!3m1!4b1!4m2!3m1!1s0x94cba244bc7fc61f:0x3db9f05b307eb689" target="_blank">Av. Sinhá Moreira, 250, apto 2074<br>Centro - Santa Rita do Sapucaí - MG<br>CEP: 37540-000</a></li>
                     </ul>
@@ -382,7 +384,7 @@
                 </div>
             </div>
             <br/>
-            <span class="pull-right text-muted small"><a href="http://www.bootstrapzero.com"></a> ©2015 Empresa</span>
+            <span class="pull-right text-muted small"><a href="" style="color: #FF9700;">Quer um site assim?</a>&nbsp;&nbsp;Desenvolvido por Empresa ©2015</span>
         </div>
     </footer>
     <div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
@@ -444,6 +446,7 @@
             $("#telefone").mask("(99) 99999-9999");
             inicializaPagina();
         });
+        
     </script>
     
   </body>
