@@ -443,6 +443,15 @@
     <script src="js/script.js"></script>
     <script>
         $(document).ready(function() {
+  $(".navbar ul li a[href^='#']").on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ 
+        scrollTop: $(this.hash).offset().top - $('.navbar').height()+10
+    }, 600);
+});
+  
+});
+        $(document).ready(function() {
             $("#telefone").mask("(99) 99999-9999");
             inicializaPagina();
         });
