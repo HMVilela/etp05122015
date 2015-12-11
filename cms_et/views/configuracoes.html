@@ -1,0 +1,26 @@
+<form class="form" name="form" style="width:70%;">
+    <div class="form-group">
+        <label >Usuário de login</label>
+        <input type="text" class="form-control" ng-model="empresa.usuario">
+    </div>
+     <hr>
+     <div class="form-group">
+        <label >Informe a senha</label>
+        <input type="password" name="senhaOriginal" class="form-control" ng-model="empresa.senha">
+    </div>
+      <div class="form-group">
+        <label >Informe a nova senha</label>
+        <input type="password" name="senha" class="form-control" ng-model="empresa.novaSenha">
+    </div>
+      <div class="form-group">
+        <label >Repetir a nova senha</label>
+        <input type="password" name="repetirSenha" class="form-control" ng-model="empresa.repNovaSenha">
+    </div>
+    <label ng-show="((form.senha.$dirty && form.repetirSenha.$dirty)&&(empresa.novaSenha != empresa.repNovaSenha))" class="alert alert-danger btn-block text-center">As senhas informadas não são iguais</label>
+    <div class="form-group">
+       <hr>
+        <label >E-mail de contato</label>
+        <input type="email" class="form-control" required  ng-model="empresa.email">
+    </div>
+    <input type="button" style="color:#000; position:fixed;right:50px; bottom:50px;" class="btn" value="Salvar" ng-click="salvarAlteracoes(empresa)">
+</form>

@@ -1,0 +1,55 @@
+
+<div class="form" ng-controller="AddTrabalhoCtrl">
+   <h3 style="color:#333; margin-top:10px;">Adicionando um novo trabalho</h3>
+   <br>
+    <div class="form-group">
+            <label>Título</label>
+            <input type="text" class="form-control" ng-model="titulo">
+    </div>
+    <div class="form-group">
+            <label>Descrição</label>
+            <textarea class="form-control" ng-model="descricao" style="height:60px;">
+                
+            </textarea>
+    </div>
+     <div class="form-group">
+            <label>Data</label>
+            <input type="date" class="form-control" ng-model="data">
+    </div>
+     <hr>
+     <h3 style="color:#333; margin-top:10px;" class="text-center">Arquivos e Imagens</h3>
+    <div class="form-group">
+            <label>Adicione arquivos ao trabalho</label>
+            <input type="file"  class="form-control" ng-file-select="escolheuArquivo($files)" multiple>
+    </div>
+    
+     <div class="row" style="background-color:#fff;">
+         <div class="col-lg-3 col-md-4 col-sm-6" ng-repeat="foto in fotosDaGaleria" style="margin-bottom:20px;background-color:#fff;" >
+                    <div class="gallery-box">
+                        <img ng-src="{{foto.url}}" class="img-responsive img-rounded" alt="Imagem {{$index}}" >
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                   <div class="row">
+                                       <div class="col-lg-12">
+                                           <a href="" class="icon-md " ng-click="destacar($index)">Destacar</a>
+                                       </div>
+                                       <br>
+                                        <div class="col-lg-12">
+                                             <a href="" class="icon-md " ng-click="excluir($index)">Excluir</a>
+                                        </div>
+                                   </div>
+                                    
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+       
+     </div>
+     <a href="" style=" position:fixed;right:50px; bottom:50px;" ng-click="salvarTrabalho()"><img src="assets/save.png" class="img-responsive" style="width:50px; height:50px;" /></a>
+            
+
+</div>
+            
