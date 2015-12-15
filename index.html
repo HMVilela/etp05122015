@@ -10,6 +10,7 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/hover.css" />
   </head>
   <body>
     <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
@@ -60,7 +61,7 @@
             </div>
         </div>
         <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in img-responsive" data-wow-delay="0.5s" poster="" id="video-background">
-            <source src="https://hmvilela.github.io/etp05122015/assets/video.mp4" type="video/mp4" style="height:100%;">Seu navegador não suporta esta tag de vídeo. Tente atualizá-lo.
+            <source src="assets/video.mp4" type="video/mp4" style="height:100%;">Seu navegador não suporta esta tag de vídeo. Tente atualizá-lo.
         </video>
     </header>
     <section class="bg-primary" id="one">
@@ -131,101 +132,76 @@
     
         <div class="container-fluid" style="margin-top: 100px;">
             <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 hover-blur">
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/foto1.jpg">
                         <img src="assets/foto1_thumb.jpg" class="img-responsive" alt="Imagem 1">
-                        <div class="gallery-box-caption">
+                        <h2><span class="text-white">Hover Blur</span></h2>
+                        <!--<div class="gallery-box-caption">
                             <div class="gallery-box-content">
                                 <div>
                                     <i class="icon-lg ion-ios-search"></i>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 hover-zoomin">
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/foto2.jpg">
                         <img src="assets/foto2_thumb.jpg" class="img-responsive" alt="Imagem 2">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 hover-fade">
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/foto3.jpg">
                         <img src="assets/foto3_thumb.jpg" class="img-responsive" alt="Imagem 3">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 hover-mask">
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/foto4.jpg">
                         <img src="assets/foto4_thumb.jpg" class="img-responsive" alt="Imagem 4">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
+                        <h2><span class="glyphicon glyphicon-search"></span></h2>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 hover-zoomout">
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/foto5.jpg">
                         <img src="assets/foto5_thumb.jpg" class="img-responsive" alt="Imagem 5">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 hover-blurout">
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/foto6.jpg">
                         <img src="assets/foto6_thumb.jpg" class="img-responsive" alt="Imagem 6">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
+                        <h2><span class="glyphicon glyphicon-search"></span></h2>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/foto7.jpg">
-                        <img src="assets/foto7_thumb.jpg" class="img-responsive" alt="Imagem 7">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
+                   <div class="overlay-item overlay-effect">
+                        <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/foto7.jpg">
+                        <img src="assets/foto7_thumb.jpg" class="img-responsive" alt="Imagem 2">
+                        <div class="mask">
+                            <h3>OVERLAY</h3>
+                            <p style="margin: 50px;">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus doloremque natus quidem id.
+                            </p>
+                            <a href="#" class="btn btn-default">Ver mais</a>
+                          </div>
                     </a>
+                          
+                    </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
+                    <div class="fall-item fall-effect">
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/foto8.jpg">
-                        <img src="assets/foto8_thumb.jpg" class="img-responsive" alt="Imagem 8">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
+                        <img src="assets/foto8_thumb.jpg" class="img-responsive" alt="Imagem 5">
+                        <div class="mask">
+                        <h2>Hover Fall</h2>
+                        <p style="margin: 50px;">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                        <a href="#" class="btn btn-default">Ver mais</a>
+                    </div>
                     </a>
+                    
+                </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/foto9.jpg">
@@ -239,30 +215,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/foto10.jpg">
-                        <img src="assets/foto10_thumb.jpg" class="img-responsive" alt="Imagem 10">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/foto11.jpg">
-                        <img src="assets/foto11_thumb.jpg" class="img-responsive" alt="Imagem 11">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                
                 
             </div>
         </div>
@@ -295,16 +248,16 @@
                     <div class="row">
                         <h4>Veja quem aprova nosso trabalho</h4>
                         <div class="col-sm-3 col-xs-6 text-center" style="margin-top: 40px;">
-                            <a href=""><img src="assets/showrrasco.png" alt="" style="width: 170px;"></a>
+                            <a href="http://www.showrrasco.co,"><img src="assets/showrrasco.png" alt="" style="margin: 10px; width: 170px;"></a>
                         </div>
                         <div class="col-sm-3 col-xs-6 text-center" style="margin-top: 40px;">
-                            <a href=""><img src="assets/bloco_urso.png" alt="" style="width: 130px;"></a>
+                            <a href="http://www.blocodourso.com"><img src="assets/bloco_urso.png" alt="" style="margin: 10px; width: 130px;"></a>
                         </div>
                         <div class="col-sm-3 col-xs-6 text-center" style="margin-top: 60px;">
-                            <a href=""><img src="assets/giga.png" alt="" style="width: 170px;"></a>
+                            <a href="http://www.gigasecurity.com.br"><img src="assets/giga.png" alt="" style="margin: 10px; width: 170px;"></a>
                         </div>
                         <div class="col-sm-3 col-xs-6 text-center" style="margin-top: 40px;">
-                            <a href=""><img src="assets/inatel.png" alt="" style="width: 170px;"></a>
+                            <a href="http://www.inatel.br"><img src="assets/inatel.png" alt="" style="margin: 10px; width: 170px;"></a>
                         </div>
                     </div>
                 </div>
@@ -384,7 +337,7 @@
                 </div>
             </div>
             <br/>
-            <span class="pull-right text-muted small"><a href="" style="color: #FF9700;">Quer um site assim?</a>&nbsp;&nbsp;Desenvolvido por Empresa ©2015</span>
+            <span class="pull-right text-muted small"><a href="" style="color: #FF9700;">Quer ter seu site?</a>&nbsp;&nbsp;Desenvolvido por Empresa ©2015</span>
         </div>
     </footer>
     <div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
