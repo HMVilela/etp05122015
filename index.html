@@ -27,14 +27,17 @@
             <div class="navbar-collapse collapse" id="bs-navbar">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a class="page-scroll" href="#one">Início</a>
+                        <a class="page-scroll" href="#first">Início</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#one">Empresa</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#two">Trabalhos</a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a class="page-scroll" href="#three">Empresa</a>
-                    </li>
+                    </li>-->
                     <li>
                         <a class="page-scroll" href="#four">Parceiros</a>
                     </li>
@@ -64,6 +67,9 @@
             <source src="assets/video.mp4" type="video/mp4" style="height:100%;">Seu navegador não suporta esta tag de vídeo. Tente atualizá-lo.
         </video>
     </header>
+    <div id="striped" style="height:70px; width:100%;">
+               
+           </div>
     <section class="bg-primary" id="one">
         <div class="container">
             <div class="row">
@@ -74,13 +80,69 @@
                     <p class="text-faded" style="margin-top: 20px;">
                        Adepta e seguidora da criatividade e da inovação constante, somos uma empresa Sul Mineira que se dedica à produção, captação, edição e pós produção de imagens digitais.<br><br>Acreditamos que a alta qualidade em produção de imagens só pode ser alcançada com a diversidade de ângulos de visão e abordagem, portanto, fazemos questão de atuar nos mais variados mercados, acumulando assim, bagagem e conhecimentos que fazem de nós uma equipe versátil, capaz de transitar entre projetos, ajustando nosso perfil às diferentes peças audiovisuais que produzimos. 
                     </p>
-                    <a href="#three" class="btn btn-default btn-xl page-scroll" style="margin-top: 40px;">conheça nossa empresa</a>
+                    <br>
+                    <p class="text-faded">
+                        Atuamos em diversas áreas, como:
+                    </p>
+                    
+                   
+                   <div class="container" style="margin-top: 40px;">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 text-center">
+                            <div class="feature">
+                               <img src="assets/drone_icon.png" alt="" style="margin-top: 10px;">
+                                <!--<i class="icon-lg ion-paper-airplane wow fadeIn" data-wow-delay=".3s"></i>-->
+                                <h3 style="margin-top: 28px;">Imagens Aéreas</h3>
+                                <p class="text-muted">Fotografia e Filmagem - Full HD - Conteúdo bruto e editado</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 text-center">
+                            <div class="feature">
+                                <i class="icon-lg ion-camera wow fadeInUp" data-wow-delay=".2s"></i>
+                                <h3>Imagens em Solo</h3>
+                                <p class="text-muted">Fotografia e Filmagem com câmeras DSLR</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 text-center">
+                            <div class="feature">
+                                <i class="icon-lg ion-clock wow fadeIn" data-wow-delay=".3s"></i>
+                                <h3>Vídeos Timelapse</h3>
+                                <p class="text-muted">Efeitos incríveis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 text-center">
+                            <div class="feature">
+                                <i class="icon-lg ion-videocamera wow fadeIn" data-wow-delay=".3s"></i>
+                                <h3>Vídeos Institucionais</h3>
+                                <p class="text-muted">Sua empresa na melhor imagem</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 text-center">
+                            <div class="feature">
+                                <i class="icon-lg ion-film-marker wow fadeInUp" data-wow-delay=".2s"></i>
+                                <h3>Imagens Subaquáticas</h3>
+                                <p class="text-muted">Qualidade até debaixo d'água</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 text-center">
+                            <div class="feature">
+                                <i class="icon-lg ion-aperture wow fadeIn" data-wow-delay=".3s"></i>
+                                <h3>Imagens 360 graus</h3>
+                                <p class="text-muted">Fotografia e filmagem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <a href="#last" class="btn btn-default btn-xl page-scroll" style="margin-top: 100px;">entre em contato</a>
                 </div>
             </div>
         </div>
     </section>
     <section id="two">
         <div class="container">
+           
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="margin-top-0 text-primary"><b>ALGUNS TRABALHOS</b></h2>
@@ -88,7 +150,7 @@
                 </div>
             </div>
         </div>
-        <div class="container" style="margin-top: 40px;">
+        <!--<div class="container" style="margin-top: 40px;">
             <div class="row">
                 <div class="col-lg-4 col-sm-6">
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/foto5.jpg">
@@ -128,9 +190,19 @@
                 </div>
                 
             </div>
-        </div>
+        </div>-->
+        
+        <nav id="menu" style="margin-top:50px;">
+	        <ul>
+		        <li><a  id="galeria_ativo" href="#"><h3>&nbsp;últimos trabalhos&nbsp;</h3></a></li>
+		        <li><a href="#"><h3>&nbsp;fotos&nbsp;</h3></a></li>
+		        <li><a href="#"><h3>&nbsp;vídeos&nbsp;</h3></a></li>
+		        <li><a href="#"><h3>&nbsp;camêra 360&nbsp;</h3></a></li>
+		        <li><a href="#"><h3>&nbsp;aéreas&nbsp;</h3></a></li>
+	        </ul>
+        </nav>
     
-        <div class="container-fluid" style="margin-top: 100px;">
+        <div id="galeria" class="container-fluid" style="padding-top:60px;">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6 hover-blur">
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="assets/foto1.jpg">
@@ -330,7 +402,7 @@
                 </div>
             </div>
             <br/>
-            <span class="pull-right text-muted small"><a href="" style="color: #FF9700;">Quer ter seu site?</a>&nbsp;&nbsp;Desenvolvido por Empresa ©2015</span>
+            <span class="pull-right text-muted small"><a href="" style="color: #FF9700;">Quer ter um site?</a>&nbsp;&nbsp;Desenvolvido por Empresa ©2015</span>
         </div>
     </footer>
     <div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
