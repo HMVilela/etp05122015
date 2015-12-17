@@ -240,7 +240,6 @@ header {
     color: #fff;
     width: 100%;
     /*background-color: #c9c9c9;*/
-    background-image: url('/assets/header-bg.jpg');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -576,6 +575,19 @@ img::-moz-selection {
 }
 
 #striped {
-    background-color: #E4B71F;
+    background-color: #333333;
     background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, #222222 35px, #222222 70px);
+    height: 30px !important;
+    width: 100%;
+    border-bottom: #222222 3px solid;
 }
+
+#btn_contato {
+    margin-top: 100px; 
+    width: 25vh; 
+    margin-left:auto; 
+    margin-right:auto; 
+    font-size: 2vh;
+    border-color: #FF9700;
+}
+
