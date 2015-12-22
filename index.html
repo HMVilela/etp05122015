@@ -53,7 +53,7 @@
             </div>
         </div>
     </nav>
-    <header id="first" class="embed-responsive embed-responsive-16by9" style="width: 100%;">
+    <header id="first" class="embed-responsive embed-responsive-16by9">
         <div class="header-content">
             <div class="inner">
                 <img class="image-responsive" src="assets/etp_video.png" alt="" style="max-width: 55%; height:auto; margin-top: -30px;">
@@ -63,13 +63,13 @@
                 <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">vídeo</a><a href="#one" class="btn btn-primary btn-xl page-scroll">Toma!</a>
             </div>
         </div>
-        <div >
-          <iframe src="https://player.vimeo.com/video/37712540?&autoplay=1&loop=1&badge=0&title=0" allowfullscreen></iframe>
-        </div>
+        <!--<div>
+          <iframe id="vimeo_player" src="http://player.vimeo.com/video/20686373?  title=0&amp;byline=0&amp;portrait=0&amp;color=FF9700&amp;autoplay=1&loop=1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen ></iframe>
+        </div>-->
         
-        <!--<video autoplay loop class="fillWidth fadeIn wow collapse in img-responsive" data-wow-delay="0.5s" poster="assets/header-bg.jpg" id="video-background">
-            <source src="assets/video.mp4" type="video/mp4" style="height:100%;">Seu navegador não suporta esta tag de vídeo. Tente atualizá-lo.
-        </video>-->
+        <video autoplay loop class="fillWidth fadeIn wow collapse in img-responsive" data-wow-delay="0.5s" poster="assets/header-bg.jpg" id="video-background">
+            <source src="assets/video.mp4" type="video/mp4">Seu navegador não suporta esta tag de vídeo. Tente atualizá-lo.</source>
+        </video>
     </header>
     <div id="striped"></div>
     
@@ -478,6 +478,15 @@
         });
         
     </script>
+    <script>
+        var iframe = $('#vimeo_player')[0],
+            player = $f(iframe),
+            status = $('.status');
+
+            player.addEvent('ready', function() {
+                player.api('setVolume', 0);
+            });
+        </script>
     
     
   </body>
