@@ -580,6 +580,7 @@ img::-moz-selection {
     height: 30px !important;
     width: 100%;
     border-bottom: #222222 3px solid;
+    position: absolute;
 }
 
 #btn_contato {
@@ -591,3 +592,7 @@ img::-moz-selection {
     border-color: #FF9700;
 }
 
+
+#banner_etp {
+    background: url(../assets/banner.png) !important;
+}
