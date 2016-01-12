@@ -596,3 +596,10 @@ img::-moz-selection {
 #banner_etp {
     background: url(../assets/banner.png) !important;
 }
+
+.movie_tag {
+    position: relative;
+    background-color: #303030;
+    background-image: url(../assets/movie_frame.png);
+    background-repeat: repeat-x;
+}
