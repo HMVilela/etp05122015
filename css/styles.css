@@ -603,3 +603,19 @@ img::-moz-selection {
     background-image: url(../assets/movie_frame.png);
     background-repeat: repeat-x;
 }
+
+#testando {
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    overflow: hidden !important;
+    height: 1080px;
+    position: absolute; 
+    z-index:-3;
+}
+
+header {
+    height: 100% !important;
+}
+
+
