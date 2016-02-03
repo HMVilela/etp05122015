@@ -671,3 +671,7 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.primeiro-menu:hover {
+    text-shadow: 4px 4px 4px white;
+}
